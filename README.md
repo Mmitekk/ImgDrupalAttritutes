@@ -23,7 +23,7 @@
 
 ```sh
 composer config repositories.img-drupal-attributes vcs https://github.com/Mmitekk/ImgDrupalAttritutes
-composer require mmitekk/img-drupal-attributes:^1.0
+composer require mmitekk/img_attr_module:^1.0
 ```
 
 В проекте Drupal с нестандартной структурой укажите путь назначения для типа `drupal-module` в корневом `composer.json`, например:
@@ -32,13 +32,13 @@ composer require mmitekk/img-drupal-attributes:^1.0
 {
   "extra": {
     "installer-paths": {
-      "web/modules/contrib/{$name}": ["type:drupal-module"]
+      "web/modules/custom/{$name}": ["type:drupal-custom-module"]
     }
   }
 }
 ```
 
-Для стандартного `drupal/recommended-project` обычно достаточно команды Composer выше. Включите модуль:
+В `drupal/recommended-project` проверьте, что в корневом `composer.json` указан путь для custom-модулей выше и доступен `composer/installers`, затем выполните команды Composer. Включите модуль:
 
 ```sh
 drush en img_attr_module -y
@@ -94,7 +94,7 @@ Stable GitHub release tags are available through the repository's VCS metadata. 
 
 ```sh
 composer config repositories.img-drupal-attributes vcs https://github.com/Mmitekk/ImgDrupalAttritutes
-composer require mmitekk/img-drupal-attributes:^1.0
+composer require mmitekk/img_attr_module:^1.0
 ```
 
 For a custom Drupal project layout, configure the destination for packages of type `drupal-module` in the root `composer.json`, for example:
@@ -103,13 +103,13 @@ For a custom Drupal project layout, configure the destination for packages of ty
 {
   "extra": {
     "installer-paths": {
-      "web/modules/contrib/{$name}": ["type:drupal-module"]
+      "web/modules/custom/{$name}": ["type:drupal-custom-module"]
     }
   }
 }
 ```
 
-For the standard `drupal/recommended-project`, the Composer commands above are normally sufficient. Enable the module:
+For `drupal/recommended-project`, make sure the root `composer.json` has the custom module installer path above and `composer/installers` is available, then run the Composer commands. Enable the module:
 
 ```sh
 drush en img_attr_module -y

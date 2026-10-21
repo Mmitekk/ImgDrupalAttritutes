@@ -1,0 +1,28 @@
+img_attr_module.settings:
+  type: config_object
+  label: 'Image Attributes settings'
+  mapping:
+    enabled:
+      type: boolean
+      label: 'Enable processing'
+    process_admin:
+      type: boolean
+      label: 'Process administration pages'
+    add_width:
+      type: boolean
+      label: 'Add missing width'
+    add_height:
+      type: boolean
+      label: 'Add missing height'
+    use_css_dimensions:
+      type: boolean
+      label: 'Use numeric dimensions from inline style'
+    use_file_dimensions:
+      type: boolean
+      label: 'Read dimensions from local image files'
+    use_svg_viewbox:
+      type: boolean
+      label: 'Use SVG viewBox'
+    skip_classes:
+      type: string
+      label: 'CSS classes to skip'
