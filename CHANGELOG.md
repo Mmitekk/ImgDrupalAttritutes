@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2 - 2026-10-21
+
+- Fix the Symfony `ResponseEvent` import in the response subscriber, preventing a fatal error during module enablement.
+
 ## 1.0.1 - 2026-10-21
 
 - Align the Composer package name with the Drupal machine name.
