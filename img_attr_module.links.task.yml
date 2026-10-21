@@ -1,0 +1,12 @@
+img_attr_module.settings:
+  route_name: img_attr_module.settings
+  title: 'Русский'
+  base_route: img_attr_module.settings
+  weight: 0
+
+img_attr_module.settings_english:
+  route_name: img_attr_module.settings_english
+  title: 'English'
+  base_route: img_attr_module.settings
+  weight: 1
+

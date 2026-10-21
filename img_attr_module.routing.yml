@@ -1,0 +1,17 @@
+img_attr_module.settings:
+  path: '/admin/config/media/image-attributes'
+  defaults:
+    _form: '\Drupal\img_attr_module\Form\SettingsForm'
+    _title: 'Атрибуты изображений'
+  requirements:
+    _permission: 'administer image attributes'
+
+img_attr_module.settings_english:
+  path: '/admin/config/media/image-attributes/english'
+  defaults:
+    _form: '\Drupal\img_attr_module\Form\SettingsForm'
+    _title: 'Image attributes'
+    lang: 'en'
+  requirements:
+    _permission: 'administer image attributes'
+

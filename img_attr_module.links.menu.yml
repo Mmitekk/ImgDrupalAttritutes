@@ -1,0 +1,7 @@
+img_attr_module.settings:
+  title: 'Image attributes'
+  description: 'Configure automatic image dimensions.'
+  route_name: img_attr_module.settings
+  parent: system.admin_config_media
+  weight: 50
+

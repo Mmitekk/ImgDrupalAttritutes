@@ -1,0 +1,9 @@
+enabled: true
+process_admin: false
+add_width: true
+add_height: true
+use_css_dimensions: true
+use_file_dimensions: true
+use_svg_viewbox: true
+skip_classes: 'image-style-responsive'
+

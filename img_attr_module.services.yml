@@ -1,0 +1,7 @@
+services:
+  img_attr_module.response_subscriber:
+    class: Drupal\img_attr_module\EventSubscriber\ImageAttributeResponseSubscriber
+    arguments: ['@config.factory', '@file_system']
+    tags:
+      - { name: event_subscriber }
+

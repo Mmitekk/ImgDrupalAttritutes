@@ -1,0 +1,7 @@
+name: Image Attributes
+type: module
+description: 'Adds missing intrinsic width and height attributes to images in rendered HTML.'
+package: Media
+core_version_requirement: ^9 || ^10 || ^11
+configure: img_attr_module.settings
+

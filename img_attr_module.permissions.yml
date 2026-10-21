@@ -1,0 +1,5 @@
+administer image attributes:
+  title: 'Administer image attributes'
+  description: 'Configure automatic image dimensions.'
+  restrict access: true
+
